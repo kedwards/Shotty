@@ -2,7 +2,7 @@ import boto3
 import botocore
 import click
 
-session = boto3.Session(profile_name='snappysean')
+session = boto3.Session(profile_name='default')
 ec2 = session.resource('ec2')
 
 def filter_instances(project):
